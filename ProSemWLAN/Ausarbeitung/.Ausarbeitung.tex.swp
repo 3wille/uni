@@ -1,0 +1,178 @@
+%Einfache Vorlage fŸr eine mit Latex realisierte Hausarbeit von http://www.studieren-info.de
+%Du kannst diese Vorlage fŸr deine Hausarbeit beliebig anpassen%
+
+
+%-------------------
+%Beginn des Kopfbereiches
+%-------------------
+
+%Wir verwenden eine DIN-A4-Seite und die Schriftgrš§e 12.
+\documentclass[a4paper,12pt]{scrartcl} 
+
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+
+%Diese drei Pakete benštigen wir fŸr die Umlaute, Deutsche Silbentrennung etc.
+%Apple-Nutzer sollten anstelle von \usepackage[latin1]{inputenc} das Paket \usepackage[applemac]{inputenc} verwenden
+%\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+%Das Paket erzeugt ein anklickbares Verzeichnis in der PDF-Datei.
+\usepackage{hyperref}
+
+%Das Paket wird fŸr die anderthalb-zeiligen Zeilenabstand benštigt
+\usepackage{setspace}
+
+%EinrŸckung eines neuen Absatzes
+\setlength{\parindent}{0em}
+
+%Definition der RŠnder
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry} 
+
+%Abstand der Fu§noten
+\deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
+
+%Regeln, bis zu welcher Tiefe (section,subsection,subsubsection) †berschriften angezeigt werden sollen (Anzeige der †berschriften im Verzeichnis / Anzeige der Nummerierung)
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+%-------------------
+%Ende des Kopfbereiches
+%-------------------
+
+
+
+
+%-------------------
+%Hier beginnt der Text deiner Hausarbeit
+%-------------------
+\begin{document}
+
+
+%Beginn der Titelseite
+\begin{titlepage}
+\begin{small}
+\vfill {Universität Hamburg \\ Informatik \\ Proseminar Lokale Rechner- und Mobilnetze }
+\end{small}
+
+
+\begin{center}
+\begin{Large}
+\vfill {\textsf{\textbf{
+WLAN
+}}}
+\end{Large}
+\end{center}
+
+\begin{small}
+\vfill Juschua Stock \\ David Kirchhausen Monteiro \\ Frederik Wille \\
+\today
+\end{small}
+
+\end{titlepage}
+%Ende der Titelseite
+
+
+%Inhaltsverzeichnis (aktualisiert sich erst nach dem zweiten Setzen)
+\tableofcontents
+\thispagestyle{empty}
+
+%Beginn einer neuen Seite
+\clearpage
+
+%Anderthalbzeiliger Zeilenabstand ab hier
+\onehalfspacing
+
+\pagestyle{plain}
+
+
+\section{Einleitung}
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet\footnote{Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Volutpat ut wisi ex ea commodo consequat duis autem vel. }. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod:
+
+%Ein lŠngeres Zitat
+\begin{quote}
+Vel eum iriure dolor in hendrerit in vulputate velit esse. Modo typi qui nunc nobis, videntur parum clari. Mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Litterarum formas humanitatis per seacula quarta decima et quinta decima eodem fiant sollemnes in\footnote{Mazim placerat facer possim assum typi non habent claritatem insitam est usus legentit.}.
+\end{quote}
+
+ Ii legunt saepius claritas est etiam processus dynamicus qui sequitur putamus parum claram anteposuerit. In iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod, tincidunt ut laoreet.
+ 
+ 
+ %Eine einfache Liste
+ \begin{itemize}
+\item Lorem ipsum
+\item Doloret maior
+\item Processus dynamicus
+\item Tincidunt natio
+
+\end{itemize}
+
+
+
+\section{Hauptteil}
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
+
+\subsection{ZwischenŸberschrift}
+Vel eum iriure dolor in hendrerit in vulputate velit esse. Modo typi qui nunc nobis, videntur parum clari. Mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Litterarum formas humanitatis per seacula quarta decima et quinta decima eodem fiant sollemnes in. Mazim placerat facer possim assum typi non habent claritatem insitam est usus legentis. Ii legunt saepius claritas est etiam processus dynamicus qui sequitur putamus parum claram anteposuerit. In iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod, tincidunt ut laoreet.
+
+Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+
+Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Volutpat ut wisi ex ea commodo consequat duis autem vel. Nihil imperdiet doming id quod mazim placerat facer possim assum. Putamus parum claram anteposuerit litterarum, formas humanitatis per seacula quarta decima?
+
+Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+
+\subsection{ZwischenŸberschrift}
+Zzril delenit augue duis dolore te feugait nulla facilisi nam liber tempor. Nihil imperdiet doming; id quod mazim placerat facer possim assum? Mirum est notare quam littera gothica quam nunc putamus! Consectetuer adipiscing elit sed diam nonummy nibh euismod.
+
+\section{Noch ein Hauptteil}
+ Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+
+ Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+
+Vel eum iriure dolor in hendrerit in vulputate velit esse. Modo typi qui nunc nobis, videntur parum clari. Mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Litterarum formas humanitatis per seacula quarta decima et quinta decima eodem fiant sollemnes in. Mazim placerat facer possim assum typi non habent claritatem insitam est usus legentis. Ii legunt saepius claritas est etiam processus dynamicus qui sequitur putamus parum claram anteposuerit. In iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod, tincidunt ut laoreet.
+
+Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Volutpat ut wisi ex ea commodo consequat duis autem vel. Nihil imperdiet doming id quod mazim placerat facer possim assum. Putamus parum claram anteposuerit litterarum, formas humanitatis per seacula quarta decima?
+
+Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+ %Diese extra lange Fu§note wird von Latex automatisch auf die nŠchste Seite umgebrochen, damit der Lesefluss im Haupttext nicht zu stark gestšrt wird
+\footnote{Vel eum iriure dolor in hendrerit in vulputate velit esse. Modo typi qui nunc nobis, videntur parum clari. Mutationem consuetudium lectorum mirum est notare quam littera gothica quam nunc. Litterarum formas humanitatis per seacula quarta decima et quinta decima eodem fiant sollemnes in. Mazim placerat facer possim assum typi non habent claritatem insitam est usus legentis. Ii legunt saepius claritas est etiam processus dynamicus qui sequitur putamus parum claram anteposuerit. In iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod, tincidunt ut laoreet.
+
+Iis qui facit eorum claritatem Investigationes demonstraverunt lectores legere me lius. Nisl ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit. Putamus parum claram anteposuerit litterarum formas, humanitatis per seacula quarta decima et. Lectorum mirum est notare quam littera gothica, quam nunc quinta decima eodem modo typi. Legentis in quod ii legunt saepius claritas est etiam processus dynamicus qui sequitur mutationem consuetudium?
+
+Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Volutpat ut wisi ex ea commodo consequat duis autem vel. Nihil imperdiet doming id quod mazim placerat facer possim assum. Putamus parum claram anteposuerit litterarum, formas humanitatis per seacula quarta decima?}
+
+\subsection{ZwischenŸberschrift}
+Enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Volutpat ut wisi ex ea commodo consequat duis autem vel. Nihil imperdiet doming id quod mazim placerat facer possim assum. Putamus parum claram anteposuerit litterarum, formas humanitatis per seacula quarta decima?
+
+\subsubsection{UnterŸberschrift}
+Zzril delenit augue duis dolore te feugait nulla facilisi nam liber tempor. Nihil imperdiet doming; id quod mazim placerat facer possim assum? Mirum est notare quam littera gothica quam nunc putamus! Consectetuer adipiscing elit sed diam nonummy nibh euismod.
+
+\subsubsection{UnterŸberschrift}
+Zzril delenit augue duis dolore te feugait nulla facilisi nam liber tempor. Nihil imperdiet doming; id quod mazim placerat facer possim assum? Mirum est notare quam littera gothica quam nunc putamus! Consectetuer adipiscing elit sed diam nonummy nibh euismod.
+
+\section{Schlu§}
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
+
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
+
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
+
+Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
+
+%Beginn einer neuen Seite
+\clearpage
+
+\section{Literaturverzeichnis}
+
+Musterfrau, Renate: Muster. Frankfurt 2003.
+
+
+Mustermann, Helmut: Noch ein Muster. Mit einer Einleitung hrsg. von Frank Muster. Frankfurt 2003.
+
+
+\end{document}
+%-------------------
+%Hier endet der Text deiner Hausarbeit
+%-------------------
