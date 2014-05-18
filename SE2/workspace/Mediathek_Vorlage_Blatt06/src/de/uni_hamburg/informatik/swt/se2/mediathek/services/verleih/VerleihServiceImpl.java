@@ -8,6 +8,7 @@ import java.util.Map;
 import de.uni_hamburg.informatik.swt.se2.mediathek.fachwerte.Datum;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Kunde;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.Verleihkarte;
+import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VormerkKarte;
 import de.uni_hamburg.informatik.swt.se2.mediathek.materialien.medien.Medium;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.AbstractObservableService;
 import de.uni_hamburg.informatik.swt.se2.mediathek.services.kundenstamm.KundenstammService;
@@ -30,6 +31,11 @@ public class VerleihServiceImpl extends AbstractObservableService implements
      */
     private Map<Medium, Verleihkarte> _verleihkarten;
 
+    /**
+     * Diese Map speichert für jedes eingefügte Medium die dazugehörige VormerkKarte.
+     */
+    private Map<Medium, VormerkKarte> _vormerkKarten;
+    
     /**
      * Der Medienbestand.
      */
@@ -67,6 +73,7 @@ public class VerleihServiceImpl extends AbstractObservableService implements
         _kundenstamm = kundenstamm;
         _medienbestand = medienbestand;
         _protokollierer = new VerleihProtokollierer();
+        _vormerkKarten = erzeugeVormerkkartenBestand();
     }
 
     /**
@@ -82,7 +89,7 @@ public class VerleihServiceImpl extends AbstractObservableService implements
         }
         return result;
     }
-
+    
     @Override
     public List<Verleihkarte> getVerleihkarten()
     {
@@ -94,15 +101,6 @@ public class VerleihServiceImpl extends AbstractObservableService implements
     {
         assert mediumImBestand(medium) : "Vorbedingung verletzt: mediumExistiert(medium)";
         return _verleihkarten.get(medium) != null;
-    }
-
-    @Override
-    public boolean istVerleihenMoeglich(Kunde kunde, List<Medium> medien)
-    {
-        assert kundeImBestand(kunde) : "Vorbedingung verletzt: kundeImBestand(kunde)";
-        assert medienImBestand(medien) : "Vorbedingung verletzt: medienImBestand(medien)";
-
-        return sindAlleNichtVerliehen(medien);
     }
 
     @Override
@@ -277,5 +275,32 @@ public class VerleihServiceImpl extends AbstractObservableService implements
         }
         return result;
     }
+    
+
+    /**
+     * Erzeugt eine HashMap aus dem medienBestand
+     * @param initialBestand
+     * @return
+     */
+    private HashMap<Medium, VormerkKarte> erzeugeVormerkkartenBestand()
+    {
+    	List <Medium>medienBestand = _medienbestand.getMedien();
+        HashMap<Medium, VormerkKarte> result = new HashMap<Medium, VormerkKarte>();
+        for (int i=0;i < medienBestand.size(); i++)
+        {
+        	result.put(medienBestand.get(i), new VormerkKarte());
+        }
+        return result;
+    }
+    
+    @Override
+    public boolean istVerleihenMoeglich(Kunde kunde, List<Medium> medien)
+    {
+        assert kundeImBestand(kunde) : "Vorbedingung verletzt: kundeImBestand(kunde)";
+        assert medienImBestand(medien) : "Vorbedingung verletzt: medienImBestand(medien)";
+
+        return sindAlleNichtVerliehen(medien);
+    }
+    
 
 }

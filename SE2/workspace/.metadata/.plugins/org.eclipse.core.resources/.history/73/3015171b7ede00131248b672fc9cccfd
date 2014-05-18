@@ -1,0 +1,22 @@
+package de.uni_hamburg.informatik.swt.se2.mediathek.materialien;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class VormerkKarteTest {
+	
+	VormerkKarte _vormerkKarte;
+	
+	public VormerkKarteTest()
+	{
+		_vormerkKarte = new VormerkKarte();
+	}
+	
+	@Test
+	public void test() 
+	{
+		
+	}
+
+}
