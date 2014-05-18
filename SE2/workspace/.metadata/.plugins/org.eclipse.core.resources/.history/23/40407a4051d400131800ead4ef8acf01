@@ -1,0 +1,26 @@
+
+public class PCVideospiel extends AbstractVideospiel {
+
+	public PCVideospiel(String titel, String kommentar, String system) {
+		super(titel, kommentar, system);
+		
+		// TODO Auto-generated constructor stub
+	}
+
+	public Geldbetrag getPreisNachTagen(int tage)
+    {
+//		tage = tage - 7;
+//		if(tage<0)
+//    	{
+//    		tage=0;
+//    	}
+		if(tage<7)
+		{
+			return new Geldbetrag(0);
+		}
+		else
+		{
+			return new Geldbetrag(_basispreis + ((int)(tage-7)/5) * 500);
+		}
+    }
+}
