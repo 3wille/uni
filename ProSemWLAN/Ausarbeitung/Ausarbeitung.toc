@@ -1,0 +1,11 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}
+\contentsline {section}{\numberline {2}Hauptteil}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Zwischen\IeC {\"Y}berschrift}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Zwischen\IeC {\"Y}berschrift}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Noch ein Hauptteil}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Zwischen\IeC {\"Y}berschrift}{6}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Unter\IeC {\"Y}berschrift}{6}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Unter\IeC {\"Y}berschrift}{6}{subsubsection.3.1.2}
+\contentsline {section}{\numberline {4}Schlu\IeC {\S }}{6}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{8}{section.5}

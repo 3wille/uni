@@ -1,0 +1,136 @@
+%Einfache Vorlage fŸr eine mit Latex realisierte Hausarbeit von http://www.studieren-info.de
+%Du kannst diese Vorlage fŸr deine Hausarbeit beliebig anpassen%
+
+
+%-------------------
+%Beginn des Kopfbereiches
+%-------------------
+
+%Wir verwenden eine DIN-A4-Seite und die Schriftgrš§e 12.
+\documentclass[a4paper,12pt]{scrartcl} 
+
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+
+%Diese drei Pakete benštigen wir fŸr die Umlaute, Deutsche Silbentrennung etc.
+%Apple-Nutzer sollten anstelle von \usepackage[latin1]{inputenc} das Paket \usepackage[applemac]{inputenc} verwenden
+%\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+%Das Paket erzeugt ein anklickbares Verzeichnis in der PDF-Datei.
+\usepackage{hyperref}
+
+%Das Paket wird fŸr die anderthalb-zeiligen Zeilenabstand benštigt
+\usepackage{setspace}
+
+%EinrŸckung eines neuen Absatzes
+\setlength{\parindent}{0em}
+
+%Definition der RŠnder
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry} 
+
+%Abstand der Fu§noten
+\deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
+
+%Regeln, bis zu welcher Tiefe (section,subsection,subsubsection) †berschriften angezeigt werden sollen (Anzeige der †berschriften im Verzeichnis / Anzeige der Nummerierung)
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+%-------------------
+%Ende des Kopfbereiches
+%-------------------
+
+
+
+
+%-------------------
+%Hier beginnt der Text deiner Hausarbeit
+%-------------------
+\begin{document}
+
+
+%Beginn der Titelseite
+\begin{titlepage}
+\begin{small}
+\vfill {Universität Hamburg \\ Informatik \\ Proseminar Lokale Rechner- und Mobilnetze }
+\end{small}
+
+
+\begin{center}
+\begin{Large}
+\vfill {\textsf{\textbf{
+WLAN
+}}}
+\end{Large}
+\end{center}
+
+\begin{small}
+\vfill Juschua Stock \\ David Kirchhausen Monteiro \\ Frederik Wille \\
+\today
+\end{small}
+
+\end{titlepage}
+%Ende der Titelseite
+
+
+%Inhaltsverzeichnis (aktualisiert sich erst nach dem zweiten Setzen)
+\tableofcontents
+\thispagestyle{empty}
+
+%Beginn einer neuen Seite
+\clearpage
+
+%Anderthalbzeiliger Zeilenabstand ab hier
+\onehalfspacing
+
+\pagestyle{plain}
+
+
+\section{Einleitung}
+
+Was ist WLAN
+Evtl Begriffserklärung
+
+
+
+\section{Functionalität}
+
+\subsection{Infrastruktur}
+
+shit
+
+\subsection{Ad-Hoc}
+
+noch mehr shit
+
+\section{technische Aspekte}
+\subsection{ZwischenŸberschrift}
+bla
+\subsubsection{UnterŸberschrift}
+foobar
+\subsubsection{UnterŸberschrift}
+asfs
+\section{Sicherheit}
+asdf
+
+\section{Schluss}
+afgdfv
+
+%Beginn einer neuen Seite
+\clearpage
+
+\section{Literaturverzeichnis}
+
+Musterfrau, Renate: Muster. Frankfurt 2003.
+
+
+Mustermann, Helmut: Noch ein Muster. Mit einer Einleitung hrsg. von Frank Muster. Frankfurt 2003.
+
+
+\end{document}
+%-------------------
+%Hier endet der Text deiner Hausarbeit
+%-------------------
