@@ -1,0 +1,13 @@
+package de.uni_hamburg.informatik.swt.se2.kino.werkzeuge;
+
+public interface Beobachter {
+
+	/**
+	 * die Änderung wird registriert 
+	 * 
+	 * @param b Das geänderte Werkzeug
+	 */
+	public void beachteAenderung(Beobachtbar b);
+
+	
+}
