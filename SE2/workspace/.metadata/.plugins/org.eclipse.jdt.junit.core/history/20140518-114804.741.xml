@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="VerleihkarteTest" project="Mediathek_Vorlage_Blatt06" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.003">
-    <testcase name="testegetFormatiertenString" classname="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.0"/>
-    <testcase name="testeKonstruktor" classname="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.0"/>
-    <testcase name="testgetMietgebuehr" classname="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.002"/>
-    <testcase name="testgetAusleihdauer" classname="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.0"/>
-    <testcase name="testEquals" classname="de.uni_hamburg.informatik.swt.se2.mediathek.materialien.VerleihkarteTest" time="0.001"/>
-  </testsuite>
-</testrun>
