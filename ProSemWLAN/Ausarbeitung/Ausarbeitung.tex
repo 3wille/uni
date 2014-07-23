@@ -198,11 +198,12 @@ Das passiert, indem die MAC-Adresse des Klienten und die 48-Bit Sequenznummer mi
 \subsubsection{Sicherheit}
 Wird die gängige Methode des "Pre-Shared-Keys" ("Vorgeteilter Schlüssel") verwendet, also ein Schlüssel ausgetauscht, der allen Klienten bekannt sein muss, kann dieser immer noch durch eine Brute-Force-Attacke oder einen Wörterbuchangriff erraten werden.
 \subsubsection{WPA2}
-WPA2 ist der Nachfolger von WPA. Er basiert auf dem Advanced Encryption Standard AES ("Erweiterter Verschlüsselungsstandard").
+WPA2 ist der Nachfolger von WPA und baut darauf auf. Er implementiert den IEEE 802.11i-Standard und basiert auf dem Advanced Encryption Standard AES ("Erweiterter Verschlüsselungsstandard").
 \subsubsection{Advanced Encryption Standard}
 Dieser Standard ist eine Blockchiffre, die im Jahre 2000 vom National Institute of Standards and Technology veröffentlicht wurde. Er gilt als vergleichsweise sehr sicher: Erst 10 Jahre nach seiner Veröffentlichung wurde der erste theoretisch interessante (jedoch praktisch irrelevante) Angriff gefunden. Der Algorithmus ist frei verfügbar, kann also in Hard- und Software lizenzfrei implementiert werden.\\
-Er basiert auf voneinander unabhängigen Block- und Schlüssellängen von 128 bis 256 Bit.\\
-Jeder zu verschlüsselnde Text wird zunächst in eine 2D-Tabelle mit vier Zeilen geschrieben, deren Zellen je ein Byte groß sind. Somit variiert die Anzahl der Spalten je nach Blockgröße von vier bis acht. Anschließend wird jeder Block nacheinander bestimmten Transformationen unterzogen. Die Besonderheit am AES-Algorithmus ist, dass hierbei verschiedene Teile des Originalschlüssels nacheinander auf den Klartextblock angewendet werden, und nicht wie üblich ein (ganzer) Schlüssel mehrmals verwendet wird.
+Er basiert auf voneinander unabhängigen Block- und Schlüssellängen von 128 bis 256 Bit. Grob funktioniert die hochkomplizierte Verschlüsselungsmethode folgendermaßen:\\
+Jeder zu verschlüsselnde Text wird zunächst in eine 2D-Tabelle mit vier Zeilen geschrieben, deren Zellen je ein Byte groß sind. Somit variiert die Anzahl der Spalten je nach Blockgröße von vier bis acht. Anschließend wird jeder Block nacheinander bestimmten Transformationen unterzogen. Die Besonderheit am AES-Algorithmus ist, dass hierbei verschiedene Teile des Originalschlüssels nacheinander auf den Klartextblock angewendet werden, und nicht wie üblich ein (ganzer) Schlüssel mehrmals verwendet wird.\\
+Außerdem benutzt auch AES eine S-Box als Basis der Verschlüsselung. Diese gibt an, wie in jeder Verschlüsselungsrunde jedes Byte eines Blocks durch einen anderen Wert zu ersetzen ist.
 
 \subsection{Gesundheitsaspekte}
 
