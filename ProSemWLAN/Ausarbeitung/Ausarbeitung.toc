@@ -5,8 +5,7 @@
 \contentsline {subsection}{\numberline {2.2}Ad-Hoc}{3}{subsection.2.2}
 \contentsline {section}{\numberline {3}technische Aspekte}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}IEEE}{3}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Unter\IeC {\"Y}berschrift}{3}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Unter\IeC {\"Y}berschrift}{3}{subsubsection.3.1.2}
-\contentsline {section}{\numberline {4}Sicherheit}{3}{section.4}
+\contentsline {subsection}{\numberline {3.2}IEEE 802}{4}{subsection.3.2}
+\contentsline {section}{\numberline {4}Sicherheit}{4}{section.4}
 \contentsline {section}{\numberline {5}Schluss}{4}{section.5}
 \contentsline {section}{\numberline {6}Literaturverzeichnis}{5}{section.6}
