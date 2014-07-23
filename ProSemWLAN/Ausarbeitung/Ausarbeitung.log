@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.4.8)  23 JUL 2014 12:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.23)  23 JUL 2014 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,29 +287,50 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen114
 \Gm@layoutvoffset=\dimen115
 \Gm@dimlist=\toks20
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 ) (./Ausarbeitung.aux)
 \openout1 = `Ausarbeitung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -317,11 +338,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count103
+\c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./Ausarbeitung.out) (./Ausarbeitung.out)
 \@outlinefile=\write3
@@ -362,228 +383,335 @@ LaTeX Info: Redefining \nameref on input line 52.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen118
+\scratchbox=\box28
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen119
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 63.
+(Font)              size <17.28> substituted on input line 65.
 
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 67.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 69.
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 67.
+(Font)              size <17.28> substituted on input line 69.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <18.72003> not available
-(Font)              size <17.28> substituted on input line 67.
+(Font)              size <17.28> substituted on input line 69.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language append on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language append on input line 79.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language append on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language append on input line 79.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 82.
+(Font)              size <12> substituted on input line 84.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 82.
+(Font)              size <12> substituted on input line 84.
 
 (./Ausarbeitung.toc
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 4.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 3.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
+(Font)              size <6> substituted on input line 3.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 4.
+(Font)              size <12> substituted on input line 3.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
+(Font)              size <6> substituted on input line 3.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 4.
+(Font)              size <12> substituted on input line 3.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 4.
+(Font)              size <6> substituted on input line 3.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <13> on input line 4.
+(Font)              <13> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.09996> on input line 4.
+(Font)              <9.09996> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.5> on input line 4.
+(Font)              <6.5> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `Ausarbeitung.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language append on input line 88.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 86.
+(babel)             in language append on input line 88.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language append on input line 88.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 86.
+(babel)             in language append on input line 88.
  [2]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language append on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 101.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 101.
+(babel)             in language append on input line 96.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <15.59996> not available
-(Font)              size <14.4> substituted on input line 103.
+(Font)              size <14.4> substituted on input line 97.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language append on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 103.
+(babel)             in language append on input line 97.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language append on input line 101.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language append on input line 101.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language append on input line 103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language append on input line 103.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language append on input line 106.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 11
-3.
+(babel)             in language append on input line 106.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 106.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 106.
+[3
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 106.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 106.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 110.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 110.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 110.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 110.
+ [4]
+Package epstopdf Info: Source file: <alohanet.eps>
+(epstopdf)                    date: 2014-07-23 17:18:10
+(epstopdf)                    size: 106328 bytes
+(epstopdf)             Output file: <alohanet-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-07-23 17:18:25
+(epstopdf)                    size: 26357 bytes
+(epstopdf)             Command: <repstopdf --outfile=alohanet-eps-converted-to.
+pdf alohanet.eps>
+(epstopdf)             \includegraphics on input line 114.
+Package epstopdf Info: Output file is already uptodate.
+ <alohanet-eps-converted-to.pdf, id=126, 817.0525pt x 370.38374pt>
+File: alohanet-eps-converted-to.pdf Graphic file (type pdf)
+
+<use alohanet-eps-converted-to.pdf>
+Package pdftex.def Info: alohanet-eps-converted-to.pdf used on input line 114.
+(pdftex.def)             Requested size: 213.39568pt x 96.73267pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 119.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 121.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 121.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 125.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 125.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 129.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 129.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 130.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 130.
+LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 13
+1.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 113.
+(Font)              size <8> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 113.
+(Font)              size <5> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.58339> not available
-(Font)              size <8> substituted on input line 113.
+(Font)              size <8> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.41673> not available
-(Font)              size <5> substituted on input line 113.
+(Font)              size <5> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 113.
+(Font)              size <8> substituted on input line 131.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 113.
+(Font)              size <5> substituted on input line 131.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.83347> on input line 113.
+(Font)              <10.83347> on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.58339> on input line 113.
+(Font)              <7.58339> on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.41673> on input line 113.
+(Font)              <5.41673> on input line 131.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 113.
+(Font)              size <8> substituted on input line 131.
 
-(/usr/share/texmf-dist/tex/latex/ucs/data/uni-1.def
-File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 115.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language append on input line 135.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language append on input line 135.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language append on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language append on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language append on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 122.
+(babel)             in language append on input line 137.
+[5 <./alohanet-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language append on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 126.
+(babel)             in language append on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language append on input line 138.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 126.
- [3
+(babel)             in language append on input line 138.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 139.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 139.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 140.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 140.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 141.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 141.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 142.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 142.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 145.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 145.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 149.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 149.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 149.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 149.
+ [6]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 151.
+
+Overfull \hbox (104.54117pt too wide) in paragraph at lines 158--161
+[]\T1/cmr/m/n/12 ALOHAnet: http://www.netplanet.org/geschichte/arpa.shtml http:
+//de.wikipedia.org/wiki/ALOHAnet
+ []
+
+
+Overfull \hbox (15.87526pt too wide) in paragraph at lines 158--161
+\T1/cmr/m/n/12 Ab-bil-dung: Quel-le: http://dixland.blogspot.de/2010/09/first-l
+an-in-world-was-original-
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 162.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 162.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language append on input line 162.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language append on input line 162.
+[7
 
 ]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 126.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 126.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 126.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 126.
- [4]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 128.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 128.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
- [5
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
-
-(./Ausarbeitung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+ (./Ausarbeitung.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
-(rerunfilecheck)             Checksum: 016B4624904CA0BD93D8A5C985E741F0;620.
+(rerunfilecheck)             Checksum: 6066613361C7A14FEECBFA49BD59330C;1197.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.44003pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 8055 strings out of 493308
- 117648 string characters out of 6143617
- 247280 words of memory out of 5000000
- 11437 multiletter control sequences out of 15000+600000
+ 8333 strings out of 493308
+ 123958 string characters out of 6143616
+ 263352 words of memory out of 5000000
+ 11674 multiletter control sequences out of 15000+600000
  15879 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,8n,51p,437b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,8n,51p,950b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -594,10 +722,10 @@ super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfsx1728.pfb>
-Output written on Ausarbeitung.pdf (5 pages, 101933 bytes).
+Output written on Ausarbeitung.pdf (7 pages, 142341 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
