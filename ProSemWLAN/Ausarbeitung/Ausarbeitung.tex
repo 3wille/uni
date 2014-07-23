@@ -160,6 +160,7 @@ Der IEEE Standard 802.11 erweitert die 802 Familie um das Wireless Local Area Ne
 \subsection{Protokolle}
 Das erste Protokoll auch legacy genannt, wurde 1997 veröffentlicht und wird bis heute für das Aussenden der Beacons benutzt. \\
 1999 folgten die Standards 802.11a und 802.11b
+\clearpage
 \section{Sicherheit}
 Um WLAN-Netze zu schützen, existieren diverse Möglichkeiten der Verschlüsselung. 
 \subsection{RC4}
@@ -210,7 +211,6 @@ Eine weitere Verschlüsselungsmethode für WLAN-Netzwerke ist der "Wi-Fi Protect
 \subsubsection{Funktionsweise}
 WPA baut großteils auf die Architektur von WEP auf. Allerdings erweitert es dessen Sicherheit, indem es dynamische Schlüssel einführt. Diese basieren auf dem "Temporal Key Integrity Protocol" ("Temporär-Schlüssel-Integritäts-Protokoll")\footnote{TKIP macht pro Paket einen eigenen 128-Bit-Schlüssel. Dabei verwendet den RC4-Algorithmus und die 64-Bit kryptographische Hashfunktion Michael für Message Integrity Checks. Außerdem stellt TKIP sicher, dass jedes Datenpaket mit einem anderen Schlüssel gesichert ist.\\
 Das passiert, indem die MAC-Adresse des Klienten und die 48-Bit Sequenznummer mit in den Schlüssel einfließt.}, das 128-Bit-Schlüssel generiert. Dadurch wird die große Sicherheitslücke in WEP großteils übergangen, außerdem wird durch den Message Integrity Check ("Nachrichts-Integritätstest") sichergestellt, dass gesendete Pakete nicht manipuliert von Angreifern in den Verkehr geschleust wurden. Schlägt dieser Test fehl, erkennt der Access Point sofort einen möglichen Angriff auf das Netzwerk.
-\clearpage
 \subsubsection{Sicherheit}
 Wird die gängige Methode des "Pre-Shared-Keys" ("Vorgeteilter Schlüssel") verwendet, also ein Schlüssel ausgetauscht, der allen Klienten bekannt sein muss, kann dieser immer noch durch eine Brute-Force-Attacke oder einen Wörterbuchangriff erraten werden.\\
 Ein möglichst sicherer Schlüssel setzt sich aus scheinbar zufällig gewählten Zeichen zusammen. Hierbei sollten Groß- und Kleinbuchstaben, Sonderzeichen und Zahlen variiert werden. Grundsätzlich lässt sich sagen: Je gemischter und länger die Zeichenkette, desto besser.
@@ -224,7 +224,7 @@ Außerdem benutzt auch AES eine S-Box als Basis der Verschlüsselung. Diese gibt
 
 \subsection{Gesundheitsaspekte}
 Seit Entwicklung der Drahtlostechnologie gibt es Bedenken bezüglich möglicher Auswirkungen auf die menschliche Gesundheit. Immer wieder werden Beschwerden wie Kopfschmerzen, Schwindel und Schlaflosigkeit laut, die in scheinbarem Zusammenhang mit den elektromagnetischen Wellen stehen. Allerdings gibt es zu diesem Thema (besonders aufgrund des jungen Alters der Technologie) keine Langzeitstudien. Es konnten also bisher keine einschlägigen, wissenschaftlichen Aussagen bezüglich der möglichen gesundheitsschädigenden Wirkung von WLAN-Netzen getätigt werden.
-
+\clearpage
 \section{Schluss}
 Zusammenfassend lässt sich sagen, dass WLAN-Netze, so jung und komplex sie auch sei mögen, Eingang in unser aller Alltag gefunden haben und diesen in Teilen geändert haben. WLAN ist eine der Vorreitertechnologien, durch die bspw. das Internet sehr breite Teile der Gesellschaft erreichen konnte. Fast jedes Mitglied unserer Gesellschaft kommt täglich in direkten Kontakt mit WLAN-Netzwerken - durch diese hohe Verbreitung und starke Relevanz ist die Dichte an (weiterentwickelten) Standards, Möglichkeiten und Verschlüsselungen ständig gewachsen und wird auch in naher Zukunft ihr Wachstum nicht einstellen.\\
 Ein Blick in die Zukunft wirft die Frage auf, inwiefern die anfangs erwähnten Anforderungen an WLAN-Standards verbessert werden können. Es gibt bereits Pläne, WLAN-Netzwerke vom klassischen Netzwerk in Richtung Medienübertragung zu entwickeln, womit man beispielsweise hochauflösendes Bildmaterial per Funk anstatt per HDMI-Kabel übertragen könnte. Der Trend zur schnelleren Übertragung und höheren Durchsatzraten hat jedenfalls bisher keinen Halt gefunden und es bleibt abzuwarten, für welch große Vielfalt an Anwendungsmöglichkeiten WLAN als Basis genutzt werden kann.
