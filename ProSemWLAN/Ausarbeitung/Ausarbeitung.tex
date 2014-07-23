@@ -115,6 +115,7 @@ Technisch war ALOHAnet so aufgebaut, dass ein Broadcast- und ein Random-Access-K
 		\caption{Schematische Darstellung des ALOHAnet}
 		\label{fig1}
 \end{figure}
+\clearpage
 
 \section{Functionalität}
 \subsection{Infrastruktur}
@@ -160,12 +161,67 @@ Um Spenden annehmen und verwalten zu können, wurde 1973 die IEEE Foundation geg
 Ungefähr 30\% aller Fachzeitschriften in der Elektro- und Informationstechnik wird von der IEEE veröffentlicht, obwohl eine recht strenge Copyright Politik verfolgt wird. Jeder Autor eines in einer dieser veröffentlichen Zeitschriften muss sein gesamtes Copyright an die Organisation abtreten und darf nur für sich und seine Mitarbeiter Kopien behalten. Will der Autor seinen Artikel trotzdem weiter verbreiten, muss er die IEEE für das Copyright bezahlen und die IEEE entsprechend auf der ersten Seite vermerken.
 \subsection{IEEE 802}
 Die Standardisierungsfamilie 802 beinhaltet wohl die am weitesten verbreiteten Standards. In ihr sind alle Standards zusammengefasst, die sich mit dem Lokal Area Network und dem Metropolitan Area Network befassen. Sie umfasst 25 Standards, wobei zum Beispiel 802.15 das Personal Area Network in 6 Unterstandars geteilt ist. 
->>>>>>> ae925f9dae41c1554920f5024977c588bd3d83db
+
+\clearpage
 \section{Sicherheit}
+Um WLAN-Netze zu schützen, existieren diverse Möglichkeiten der Verschlüsselung. 
 \subsection{RC4}
+RC4 ist eine Stromverschlüsselung, die auch unter ARC4 oder Arcfour bekannt ist. Sie ist eine Marke von RSA Security und geht auf eine Open Source Veröffentlichung von 1994 zurück.\\
+Die Verschlüsselungsmethode findet unter anderem in HTTPS, SSH1, WEP und WPA Verwendung.
+\subsubsection{Funktionsweise}
+Konkret arbeitet RC4 so, dass zunächst eine Zufallsfolge aus einem einmaligem Schlüssel (per "S-Box"\footnote{Bei einer S-Box wird eine m-stellige Binärzahl durch eine n-stellige Binärzahl ersetzt. Sie wird meistens eingesetzt, um die Beziehung zwischen Klar- und Ciphertext zu verwischen (in der Krypto-Fachsprache als "Konfusion" bezeichnet).}) generiert wird. Anschließend daran wird der Klartext Bit für Bit mit der Zufallsfolge XOR-verknüpft. Wichtig hierbei ist, dass die Zufallsfolge auch tatsächlich bei jeder Anwendung neu generiert wird und nicht mehrfach auftritt, da nur so die Sicherheit garantiert werden kann. RC4 ist besonders beliebt, da er einfach in Hard- und Software zu implementieren ist, vergleichsweise effizient berechenbar und dadurch gut kompatibel ist.
+\subsubsection{Bedenken}
+Da RC4 ein Stromchiffre ist, bietet es keinen Integritätsschutz. Ändert also ein Angreifer ein Bit des Ciphertextes, wird auch das gleiche Bit des Klartextes geändert. 2001 glückte Scott Fluhrer der erste praktische Angriff auf ein RC4-Chiffre. Der Internetaktivist und Spezialist für Computersicherheit Jacob Appelbaum geht davon aus, dass die NSA einen RC4-verschlüsselten Text in Echtzeit brechen kann, diese Meinung wird auch von bspw. Bruce Schneier geteilt.\\
+Sowohl die Europäische Agentur für Netz- und Informationssicherheit, als auch das Bundesamt für Sicherheit in der Informationstechnik raten offiziell von der Verwendung von RC4 ab. Die Sicherheit von RC4 ist also alles andere als gegeben.
 \subsection{WEP}
+Die "Wired Equivalent Privacy" (zu Deutsch wörtlich "Kabelgebundene Äquivalente Privatsphäre") ist die erste, gängige Verschlüsselungsmethode für WLAN-Netzwerke.
+\subsubsection{Funktionsweise}
+Das WEP-Protokoll verwendet dabei den oben beschriebenen RC4-Algorithmus bei der Erzeugung eines sogenannten Keystreams. Dieser Keystream erhält einen Schlüssel und einen Initialisierungsvektor (IV) als Eingabe. Für jede zu verschlüsselnde Nachricht wird ein neuer IV gebildet und mit einem Schlüssel verknüpft, der allen Basisstationen im Netz bekannt ist (dieses Prinzip ist auch als "Shared Key" bekannt). Zusätzlich zu diesem Keystream wird mittels zyklischer Redundanzprüfung (englisch "Cyclic Redundancy Check", CRC) eine Prüfsumme berechnet und an die Nachricht angehängt. Anschließend wird der verschlüsselten Nachricht der Initialisierungsvektor unverschlüsselt vorangestellt und die Nachricht kann übertragen werden. Der Empfänger der Nachricht kann sich aus der Kombination IV, RC4-Schlüssel und Ciphertext den Klartext errechnen.
+\begin{figure}[ht]
+		\centering
+	\includegraphics[width=0.4\textwidth]{WEP.eps}
+		\caption{Ein Ciphertext wird erstellt und am Zielort entschlüsselt}
+		\label{fig2}
+\end{figure}
+\subsubsection{Das WEP-Datenpaket}
+Ein WEP-Datenpaket gliedert sich folgendermaßen: Zusätzlich zu den Nutzdaten steht der 24-Bit-Initialisierungsvektor vor der Nachricht und an der Nachricht steckt, verschlüsselt, die 32-Bit-Prüfsumme ICV (englisch "Integrity Check Value", wörtlich übersetzt "Integritätsprüfsumme").
+\begin{figure}[ht]
+		\centering
+	\includegraphics[width=0.5\textwidth]{WEP_DPaket.eps}
+		\caption{Der grobe Aufbau eines WEP-Datenpakets}
+		\label{fig3}
+\end{figure}
+\subsubsection{Angriffsmöglichkeiten auf WEP}
+Zunächst muss gesagt werden, dass ohne aktive Teilnehmer in einem WEP-Netzwerk die Chancen sehr schlecht stehen, die Verschlüsselung innerhalb vergleichsweise kurzer Zeit zu durchbrechen. Mit Teilnehmern kann man sich allerdings am 24 Bit kurzen Initialisierungsvektor bedienen, der jeder Nachricht unverschlüsselt vorangestellt wird. Ein Angreifer kann mitlauschen, dabei aufzeichnen um sich dann aus mehreren mitgelauschten Vektoren den Schlüssel zu errechnen.\\
+%oder Antworten des Acces-Points forcieren, um innerhalb einer Minute genügend Daten für erfolgreichen passiven Angriff zu sammeln
+Das folgende Beispiel veranschaulicht diese Methode:
+\begin{figure}[ht]
+		\centering
+	\includegraphics[width=0.4\textwidth]{WEP_Angriff.eps}
+		\caption{WEP-Angriffsschema}
+		\label{fig3}
+\end{figure}\\
+Der Server schickt zur Authentifizierung eines Klienten Challenge1, bspw. Zufallszahl eine Zufallszahl, die dieser korrekt verschlüsselt zurück an den Server schicken soll. Der Klient verschlüsselt die "Challenge" und schickt sie als IV1 (Initialisierungsvektor1) + Ciphertext1 zurück.\\
+Trudy, die Angreiferin, hat Challenge1, IV1 und Ciphertext1 mitgelauscht.
+Mittels XOR kann sie sich nun den Keystream1 errechnen. Da sie den IV1 ebenfalls mitgelauscht hat, hat sie nun eine gültige Kombination Keystream + Initialisierungsvektor. Jetzt kann sie Challenge2 vom Server selber beantworten, nämlich mit dem Paket IV1 + Ciphertext2, wobei der Ciphertext2 mittels Challenge2 XOR Keystream1 berechnet wurde.\\
+Trudy schickt dies dem Server und wird erfolgreich authentifiziert.\\
+\\
+Neben dieser Methode existieren auch andere Angriffstechniken auf WEP-Netzwerke. Angriffsmöglichkeiten: Beispielsweise können mitgehörte Datenpakete entschlüsselt werden, indem man den gesamten Verkehr des Netzwerkes abfängt und einzelne Nachrichten mehrmals leicht modifiziert wieder in das WLAN eingespielt werden. Aus den vom Server geschickten Antworten kann sich nun mittels spezieller Technik der Schlüssel errechnet werden.\\
+Eine andere Art des Angriffs ist der "KoreK-Angriff" (benannt nach Pseudonym des Entdeckers). Hierbei wird von einer verschlüsselten Nachricht anfangs nur ein Byte abgeschnitten, durch ein geratenes ersetzt und an den Access Point zurückgeschickt. Akzeptiert der Access Point, hat man richtig geraten und kann nun das nächste Byte raten. Akzeptiert er die teilweise geratenen Nachricht nicht, muss neu geraten und gesendet werden, bis der Access Point akzeptiert. Auf diese Art lässt sich eine ganze Nachricht entschlüsseln um somit den Schlüssel zu errechnen.
 \subsection{WPA}
-\subsection{WPA2}
+Eine weitere Verschlüsselungsmethode für WLAN-Netzwerke ist der "Wi-Fi Protected Access" WPA (zu Deutsch "Geschützter Wi-Fi Zugriff"). Es handelt sich hierbei um einen sogenannten Pseudostandard, der dem neuen Standard IEEE 802.11i vorweggenommen wurde, da sich WEP als unsicher erwies und sich die Veröffentlichung des gesamten IEE 802.11i-Standards verzögerte. Die Zertifizierung nach WPA begann im Jahre 2003.
+\subsubsection{Funktionsweise}
+WPA baut großteils auf die Architektur von WEP auf. Allerdings erweitert es dessen Sicherheit, indem es dynamische Schlüssel einführt. Diese basieren auf dem "Temporal Key Integrity Protocol" ("Temporär-Schlüssel-Integritäts-Protokoll")\footnote{TKIP macht pro Paket einen eigenen 128-Bit-Schlüssel. Dabei verwendet den RC4-Algorithmus und die 64-Bit kryptographische Hashfunktion Michael für Message Integrity Checks. Außerdem stellt TKIP sicher, dass jedes Datenpaket mit einem anderen Schlüssel gesichert ist.\\
+Das passiert, indem die MAC-Adresse des Klienten und die 48-Bit Sequenznummer mit in den Schlüssel einfließt.}, das 128-Bit-Schlüssel generiert. Dadurch wird die große Sicherheitslücke in WEP großteils übergangen, außerdem wird durch den Message Integrity Check ("Nachrichts-Integritätstest") sichergestellt, dass gesendete Pakete nicht manipuliert von Angreifern in den Verkehr geschleust wurden. Schlägt dieser Test fehl, erkennt der Access Point sofort einen möglichen Angriff auf das Netzwerk.
+\subsubsection{Sicherheit}
+Wird die gängige Methode des "Pre-Shared-Keys" ("Vorgeteilter Schlüssel") verwendet, also ein Schlüssel ausgetauscht, der allen Klienten bekannt sein muss, kann dieser immer noch durch eine Brute-Force-Attacke oder einen Wörterbuchangriff erraten werden.
+\subsubsection{WPA2}
+WPA2 ist der Nachfolger von WPA. Er basiert auf dem Advanced Encryption Standard AES ("Erweiterter Verschlüsselungsstandard").
+\subsubsection{Advanced Encryption Standard}
+Dieser Standard ist eine Blockchiffre, die im Jahre 2000 vom National Institute of Standards and Technology veröffentlicht wurde. Er gilt als vergleichsweise sehr sicher: Erst 10 Jahre nach seiner Veröffentlichung wurde der erste theoretisch interessante (jedoch praktisch irrelevante) Angriff gefunden. Der Algorithmus ist frei verfügbar, kann also in Hard- und Software lizenzfrei implementiert werden.\\
+Er basiert auf voneinander unabhängigen Block- und Schlüssellängen von 128 bis 256 Bit.\\
+Jeder zu verschlüsselnde Text wird zunächst in eine 2D-Tabelle mit vier Zeilen geschrieben, deren Zellen je ein Byte groß sind. Somit variiert die Anzahl der Spalten je nach Blockgröße von vier bis acht. Anschließend wird jeder Block nacheinander bestimmten Transformationen unterzogen. Die Besonderheit am AES-Algorithmus ist, dass hierbei verschiedene Teile des Originalschlüssels nacheinander auf den Klartextblock angewendet werden, und nicht wie üblich ein (ganzer) Schlüssel mehrmals verwendet wird.
+
 \subsection{Gesundheitsaspekte}
 
 
@@ -185,6 +241,13 @@ Mustermann, Helmut: Noch ein Muster. Mit einer Einleitung hrsg. von Frank Muster
 ALOHAnet: http://www.netplanet.org/geschichte/arpa.shtml
 http://de.wikipedia.org/wiki/ALOHAnet
 Abbildung: Quelle: http://dixland.blogspot.de/2010/09/first-lan-in-world-was-original-version.html
+
+http://de.wikipedia.org/wiki/S-Box
+http://de.wikipedia.org/wiki/RC4
+http://www.heise.de/security/meldung/NSA-entschluesselt-Webserver-Daten-angeblich-in-Echtzeit-2041383.html
+%http://de.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol
+%http://de.wikipedia.org/wiki/Wi-Fi_Protected_Access
+%http://de.wikipedia.org/wiki/Wired_Equivalent_Privacy
 
 \end{document}
 %-------------------
