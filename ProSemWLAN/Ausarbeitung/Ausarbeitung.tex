@@ -32,8 +32,6 @@
 %Definition der RŠnder
 \usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry} 
 
-\usepackage{graphicx}
-
 %Abstand der Fu§noten
 \deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
 
@@ -94,27 +92,11 @@ Wireless Local Area Network
 
 
 \section{Einleitung}
-\subsection{Was ist WLAN?}
-Als WLAN (Wireless Local Area Network) bezeichnet man ein lokales Funknetz, das meist einen Standard der IEEE-802.11 Familie implementiert. In vielen Ländern wird für diese Implementationen auch oft der Begriff "WiFi" verwendet (siehe "WlAN, WiFi - Begriffserklärung" im nächsten Kapitel.\\
-WLAN ermöglicht heutzutage einen einfachen Zugang zum Internet und hat in sehr vielen Privat- und Berufsstätten Einzug gefunden. Besonders beliebt sind WLAN-Netze in Eigenheimen, wodurch meist auf der gesamten Wohnfläche ein drahtloser Netzwerkkommunikations- und Internetservice bereitgestellt wird. Außerdem sind die meisten Universitäten, Flughäfen, sowie viele Cafés und Restaurants mit sogenannten Hot-Spots ausgestattet, die je nach Bedarf ihr WLAN-Netz der Öffentlichkeit zugänglich machen können.\\
-Seit seiner Entstehung wurde WLAN-Netzen immer mehr Beachtung geschenkt und ihre Bedeutung ist stetig gewachsen. Durch diese enorme Popularität und mittlerweile großen Ausbreitung benutzen die meisten Mitglieder unserer Gesellschaft täglich auf die eine oder andere Art WLAN-Netze, sei es mit Mobilgeräten ("Smartphones", Tablets, mobilen Computern) oder mit Tower-Rechnern.
-\subsection{Anforderungen}
-Typische Anforderungen an WLANs sind beispielsweise ein möglichst hoher Durchsatz an Daten, eine große Anzahl von Klienten (Mobilstationen) und die Interkonnektion mit leitungsgebundenen Netzen. Letztere ermöglicht beispielsweise die beliebte Anbindung an das weltweite Internet. Außerdem sollen die elektromagnetischen Wellen der WLAN-Netze in einem möglichst großen Bereich empfangen werden können und die Mitgliedschaft in einem WLAN-Netz sollte für einen Klienten möglichst stromsparsam möglich sein (um bspw. Handyakkus zu schonen). Des Weiteren sollte der Betrieb möglichst lizenzfrei möglich sein, um insbesondere Privatpersonen das Einrichten eines WLAN-Netzes nicht zu erschweren. Zu guter Letzt sollte garantiert sein, dass das Konfigurieren neu zu integrierender bzw. auszugliedernder Mobilstationen dynamisch passiert und keinen großen Aufwand seitens des Netzbereitstellers fordert.
-\subsection{WLAN, WiFi - Begriffserklärung}
-Zwischen den Begriffen WLAN und WiFi steckt ein großer Bedeutungsunterschied, der z.B. in Großbrittanien, Kanada und Spanien kaum beachtet wird. WLAN bezeichnet das Netzwerk selber ("Network"), hinter dem Begriff WiFi steckt die WiFi-Alliance. 1999 gegründet, stellt sie seitdem Interoperabilität zwischen Geräten sicher, indem sie Geräte zertifiziert.\\ Konkret funktioniert das folgendermaßen: Hersteller, die sich nach dem Zertifikat für ihr Produkt sehnen, schicken es der Allianz, die das Produkt umfangreich testet. Insbesondere wird (gegen eine Gebühr) getestet, ob es dem entsprechenden IEEE-Standard entspricht und Interoperabilität ermöglicht. Verläuft die Prüfung erfolgreich, darf der Hersteller das Produkt mit dem bekannten WiFi-Logo kennzeichnen.\\
-Hintergrund dieser Zertifizierung ist ein, insbesondere in den 90er-Jahren aufkommender Boom der Technologie, der viele Standardaufweichungen, z.B. durch proprietäre Hardware, mit sich zog und Inkompatibilitätsprobleme mit sich zog.
-\subsection{Geschichtlicher Hintergrund, ALOHAnet}
-Mit zunehmender Bedeutung und Verbreitung von Computern wurden in der zweiten Hälfte des 20. Jahrhunderts Vernetzungsmöglichkeiten zunehmend wichtiger. Auf der Suche nach neuen, insbesondere drahtlosen Mitteln des Informationsaustausches wurde 1970 an der Universität von Hawaii unter der Leitung von Norman Abramson das sogenannte ALOHAnet entwickelt. Es diente ausschließlich Forschungszwecken. Es war das erste Netz, in dem Nutzer über Funkstrecken auf einen Zentralrechner zugreifen konnten.\\
-Konkret verband es den Zentralrechner auf der Insel Oahu mit sieben Standorten auf vier Inseln (siehe Abb.1). Später wurde es, mithilfe des Einsatzes von Repeatern, auf weitere Inseln Hawaiis ausgedehnt. Anfänglich konnten Endgeräte nur auf den Großrechner zugreifen, später war es sogar möglich, mit anderen Endgeräten zu kommunizieren.\\
-Technisch war ALOHAnet so aufgebaut, dass ein Broadcast- und ein Random-Access-Kanal paralell genutzt wurden. Die Stationen schickten ihre Datenpakete über den Random-Access-Kanal zum Zentralrechner und erhielten nach erfolgreicher Übertragung eine Nachricht des Empfängers über den Broadcast-Kanal. Bei eventueller gleichzeitiger Übertragung von zwei Nachrichten (bzw. Stationen) schlugen beide Versuche fehl und das Senden wurde nach einer zufällig gewählten Zeitspanne wiederholt. Auf diese Weise wurden die Chancen, dass beide Sender beim nächsten Übertragungsversuch wieder eine Kollision erzeugen, minimiert.
 
-%Abbildung 1: Bild mit Inseln und Rechnern
-\begin{figure}[ht]
-		\centering
-	\includegraphics[width=0.5\textwidth]{alohanet.eps}
-		\caption{Schematische Darstellung des ALOHAnet}
-		\label{fig1}
-\end{figure}
+Was ist WLAN
+Evtl Begriffserklärung
+
+
 
 \section{Functionalität}
 
@@ -126,30 +108,23 @@ shit
 
 noch mehr shit
 
-\section{technische Aspekte}
-\subsection{IEEE}
-<<<<<<< HEAD
-Das Institute of Electrical and Electronics Engineers\footnote{Der volle Name wurde inzwischen fast komplett aufgegeben und wird nur noch für offizielle Dokumente genutzt} ist ein im Jahre 1963 gegründerter Berufsverband von Elektro- und Informationstechnik Ingenieuren. Neben den weitverbreiteten Standards veröffentlicht das IEEE einige sehr angesehene Fachzeitschriften und hält Tagungen. 
-Untergliedert ist die IEEE in 
-\subsubsection{Unterüberschrift}
-foobar
-\subsubsection{Unterüberschrift}
-asfs
-=======
+
+\section{IEEE}
 Das Institute of Electrical and Electronics Engineers\footnote{Der volle Name wurde inzwischen fast komplett aufgegeben und wird nur noch für offizielle Dokumente genutzt} ist ein im Jahre 1963 gegründeter Berufsverband von Elektro- und Informationstechnik Ingenieuren. Neben den weitverbreiteten Standards veröffentlicht das IEEE einige sehr angesehene Fachzeitschriften, hält Tagungen und vergibt weltweit angesehene Auszeichnungen. \\
 Organisatorisch sind die 425.000 Mitglieder der IEEE in 38 Societies gegliedert, die sich jeweils mit einem bestimmten Teilgebiet beschäftigt und wiederum in über 300 lokale Teilorganisationen unterteilt sind. Als Beispiel gibt es die IEEE Communications Society, die sich unter anderem mit WLAN beschäftigt. Für Gebiete in denen sich die Bereiche mehrerer Societies überschneiden, werden sogenannte Councils gegründet. Für die Entwicklung von Standards sind Komitees zuständig, wie "IEEE 802 LAN/MAN Standards Committee".\\
 Um Spenden annehmen und verwalten zu können, wurde 1973 die IEEE Foundation gegründet. Ein Teil dieser Spenden kommen den Auszeichnungsträgern der IEEE zu, während der Rest für Entwicklungs-, Forschungs- und humanitäre Zwecke verwendet wird. \\
-Ungefähr 30\% aller Fachzeitschriften in der Elektro- und Informationstechnik wird von der IEEE veröffentlicht, obwohl eine recht strenge Copyright Politik verfolgt wird. Jeder Autor eines in einer dieser veröffentlichen Zeitschriften muss sein gesamtes Copyright an die Organisation abtreten und darf nur für sich und seine Mitarbeiter Kopien behalten. Will der Autor seinen Artikel trotzdem weiter verbreiten, muss er die IEEE für das Copyright bezahlen und die IEEE entsprechend auf der ersten Seite vermerken.
-\subsection{IEEE 802}
-Die Standardisierungsfamilie 802 beinhaltet wohl die am weitesten verbreiteten Standards. In ihr sind alle Standards zusammengefasst, die sich mit dem Lokal Area Network und dem Metropolitan Area Network befassen. Sie umfasst 25 Standards, wobei zum Beispiel 802.15 das Personal Area Network in 6 Unterstandars geteilt ist. 
->>>>>>> ae925f9dae41c1554920f5024977c588bd3d83db
+Ungefähr 30\% aller Fachzeitschriften in der Elektro- und Informationstechnik wird von der IEEE veröffentlicht, obwohl eine recht strenge Copyright Politik verfolgt wird. Jeder Autor eines in einer dieser veröffentlichen Zeitschriften muss sein gesamtes Copyright an die Organisation abtreten und darf nur für sich und seine Mitarbeiter Kopien behalten. Will der Autor seinen Artikel trotzdem weiter verbreiten, muss er die IEEE für das Copyright bezahlen und die IEEE entsprechend auf der ersten Seite vermerken. \newpage
+\section{IEEE 802}
+Die Standardisierungsfamilie 802 beinhaltet wohl die am weitesten verbreiteten Standards. In ihr sind alle Standards zusammengefasst, die sich mit dem Lokal Area Network und dem Metropolitan Area Network befassen. Sie umfasst 25 Standards, wobei zum Beispiel 802.15 das Personal Area Network wiederum in 6 Unterstandards geteilt ist. Die Bekanntesten sind wohl Ethernet(802.3), WLAN bzw Wifi(802.11) und Bluetooth(802.15.1). Die Familie 802 beinhaltet auch einige veraltete und abgeschaffte Standards wie 802.14 für Kabel Modems. \\
+Die Bezeichnung IEEE 802 stammt angeblich daher, dass das erste Treffen des zuständigen \glqq IEEE 802 LAN/MAN Standards Committee \grqq  im Februar 1980 statt fand, in Wahrheit war es wohl eher die nächste frei Nummerierung.\\
+Im Bezug auf das OSI-Modell arbeitet alles in IEEE 802 in dem untersten, dem Physical Layer und dem darüber liegendem Data Link Layer, wobei es den Data Link Layer in zwei Unterschichten trennt: den Logical Link Control Layer(LLC) und den Media Access Control Layer(MAC). Durch diese Unterteilung kann der Data Link Layer über die MAC Schicht mit dem Physical Layer und über die LLC Schicht mit dem über dem Data Link Layer liegendem Network Layer verbunden werden. Neben dieser eher theoretischen Grundlage sorgt die MAC Schicht für eine Einheitlich Addressierung - die MAC-Adresse - und die LLC Schicht dafür, dass mehrere Protokolle der Netzwerk Schicht - wie zum Beispiel das Internet Protokoll(IP) - simultan benutzt werden können. \newpage
+\section{IEEE 802.11}
+Der IEEE Standard 802.11 erweitert die 802 Familie um das Wireless Local Area Network und das damit verbundene Wifi Certificate. Historisch wurde dieser Standard möglich als 1985 die U.S. Regierung die ISM-Bänder für den nicht lizenzierten Gebrauch freigab. Das erste Protokoll auch legacy genannt, wurde 1997 veröffentlicht und wird bis heute als Grundlage der später folgenden Standards nur noch für das Aussenden der Beacons benutzt.
+\subsection{Protokolle}
+Das erste Protokoll auch legacy genannt, wurde 1997 veröffentlicht und wird bis heute für das Aussenden der Beacons benutzt. \\
+1999 folgten die Standards 802.11a und 802.11b
 \section{Sicherheit}
-\subsection{RC4}
-\subsection{WEP}
-\subsection{WPA}
-\subsection{WPA2}
-\subsection{Gesundheitsaspekte}
-
+asdf
 
 \section{Schluss}
 afgdfv
@@ -164,9 +139,6 @@ Musterfrau, Renate: Muster. Frankfurt 2003.
 
 Mustermann, Helmut: Noch ein Muster. Mit einer Einleitung hrsg. von Frank Muster. Frankfurt 2003.
 
-ALOHAnet: http://www.netplanet.org/geschichte/arpa.shtml
-http://de.wikipedia.org/wiki/ALOHAnet
-Abbildung: Quelle: http://dixland.blogspot.de/2010/09/first-lan-in-world-was-original-version.html
 
 \end{document}
 %-------------------
