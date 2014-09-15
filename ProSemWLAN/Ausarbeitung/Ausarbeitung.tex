@@ -14,6 +14,7 @@
 \usepackage[utf8x]{inputenc}
 
 
+
 %Diese drei Pakete benštigen wir fŸr die Umlaute, Deutsche Silbentrennung etc.
 %Apple-Nutzer sollten anstelle von \usepackage[latin1]{inputenc} das Paket \usepackage[applemac]{inputenc} verwenden
 %\usepackage[latin1]{inputenc}
@@ -41,6 +42,9 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+
+\usepackage{epstopdf}
+\usepackage{epsfig}
 %-------------------
 %Ende des Kopfbereiches
 %-------------------
@@ -145,7 +149,7 @@ Ein Lösungsansatz für dieses Problem ist es z.B. einen oder mehrere Wireless A
 Der Ad-hoc - Modus verzichtet auf Basisstationen und funktioniert allein auf der Basis der einzelnen Endgeräte. Alle Endgeräte sind dabei gleichwertig und brauchen nur eine gemeinsame „SSID“ um eine Verbindung aufzubauen, Übertragungsraten und Verschlüsselungen sind dabei optional. Da es kein zentrales Gerät gibt welches eine koordinierende Funktion übernimmt muss jedes Gerät dieses für sich selbst übernehmen. Das bedeutet das in diesem Netzwerk keine Informationen über alle Teilnehmder des Netzwerkes vorliegen, ledilich jedes Endgerät „kennt“ die Geräte mit denen es Verbunden ist, bzw. welche in Reichweite sind. Dazu kommt das das Weiterleiten von Datenpaketen zu weiteren Stationen nicht ohne weiteres möglich ist und auch nicht im Ad-hoc – Standard vorgesehen. Dies führt dazu ein Ad-hoc Netzwerk lokal sehr auf die Reichweite der einzelnen Geräte limitiert ist. Um die Problematik der limitierten Reichweite zu umgehen kann ein Endgerät mit Routingfähigkeiten aufgewertet werden und kann so Daten zu anderen Stationen weiterleiten und löst somit auch die Anonymität des Netzwerkes teilweise auf. 
 Ein Ad-hoc Netzwerk welches ein solches Routing fähiges Gerät bestitzt wird in der Regel als Mobiles Ad-hoc Netzwerk bezeichnet. Die Forschung in diesem Gebiet ist noch nicht abgeschlossen und es gibt bereits Standartisierung vorschläge und kommerzielle Lösung.
 
-
+\clearpage
 \section{IEEE}
 Das Institute of Electrical and Electronics Engineers\footnote{Der volle Name wurde inzwischen fast komplett aufgegeben und wird nur noch für offizielle Dokumente genutzt} ist ein im Jahre 1963 gegründeter Berufsverband von Elektro- und Informationstechnik Ingenieuren. Neben den weitverbreiteten Standards veröffentlicht das IEEE einige sehr angesehene Fachzeitschriften, hält Tagungen und vergibt weltweit angesehene Auszeichnungen. \\
 Organisatorisch sind die 425.000 Mitglieder der IEEE in 38 Societies gegliedert, die sich jeweils mit einem bestimmten Teilgebiet beschäftigt und wiederum in über 300 lokale Teilorganisationen unterteilt sind. Als Beispiel gibt es die IEEE Communications Society, die sich unter anderem mit WLAN beschäftigt. Für Gebiete in denen sich die Bereiche mehrerer Societies überschneiden, werden sogenannte Councils gegründet. Für die Entwicklung von Standards sind Komitees zuständig, wie "IEEE 802 LAN/MAN Standards Committee".\\
@@ -156,11 +160,14 @@ Die Standardisierungsfamilie 802 beinhaltet wohl die am weitesten verbreiteten S
 Die Bezeichnung IEEE 802 stammt angeblich daher, dass das erste Treffen des zuständigen \glqq IEEE 802 LAN/MAN Standards Committee \grqq  im Februar 1980 statt fand, in Wahrheit war es wohl eher die nächste frei Nummerierung.\\
 Im Bezug auf das OSI-Modell arbeitet alles in IEEE 802 in dem untersten, dem Physical Layer und dem darüber liegendem Data Link Layer, wobei es den Data Link Layer in zwei Unterschichten trennt: den Logical Link Control Layer(LLC) und den Media Access Control Layer(MAC). Durch diese Unterteilung kann der Data Link Layer über die MAC Schicht mit dem Physical Layer und über die LLC Schicht mit dem über dem Data Link Layer liegendem Network Layer verbunden werden. Neben dieser eher theoretischen Grundlage sorgt die MAC Schicht für eine Einheitlich Addressierung - die MAC-Adresse - und die LLC Schicht dafür, dass mehrere Protokolle der Netzwerk Schicht - wie zum Beispiel das Internet Protokoll(IP) - simultan benutzt werden können. \newpage
 \section{IEEE 802.11}
-Der IEEE Standard 802.11 erweitert die 802 Familie um das Wireless Local Area Network und das damit verbundene Wifi Certificate. Historisch wurde dieser Standard möglich als 1985 die U.S. Regierung die ISM-Bänder für den nicht lizenzierten Gebrauch freigab. Das erste Protokoll auch legacy genannt, wurde 1997 veröffentlicht und wird bis heute als Grundlage der später folgenden Standards nur noch für das Aussenden der Beacons benutzt.
-\subsection{Protokolle}
-Das erste Protokoll auch legacy genannt, wurde 1997 veröffentlicht und wird bis heute für das Aussenden der Beacons benutzt. \\
-1999 folgten die Standards 802.11a und 802.11b
+Der IEEE Standard 802.11 erweitert die 802 Familie um das Wireless Local Area Network und das damit verbundene Wifi Certificate. Historisch wurde dieser Standard möglich als 1985 die U.S. Regierung die ISM-Bänder für den nicht lizenzierten Gebrauch freigab.\\
+\subsection{Standardisierungen}
+Der erste Standard\footnote{später legacy genannt} wurde 1997 veröffentlicht, benutzt das 2.4GHz Band und hat eine Bandbreite von 22MHz. Es bietet nur eine geringe Reichweite und maximal eine Datenrate von 2Mbit pro Sekunde. Es wurde bereits nach zwei Jahren komplett von den Standards 802.11a und 802.11b abgelöst. Beide bieten weit höhere Datenraten und Reichweiten. Sie unterscheiden sich in der benutzen Frequenzbändern und vor allem der Modulationstechnik\footnote{beschreibt wie die Kabelsingale in elektromagnetische Wellen übertragen werde}. 802.11b hat sich allerdings durchgesetzt, dessen Modulationstechnik "Direct-Sequence Spread Spectrum"\footnote{kurz: DSSS; hierdurch ist das Funksignal weniger anfällig gegen Störungen} und Frequenzband für folgende Standards weitergenutzt und weiterentwickelt wurde.\\
+Der heute noch häufig zu findende Standard 802.11g wurde 2003 veröffentlicht, nutzt wie 802.11b das 2,4Ghz Band mit einer Bandbreit von 22Mhz und beinhaltet neben DSSS auch das neue Modulationsverfahren \glqq Orthogonal Frequency-Division Multiplexing\grqq \footnote{kurz: OFDM; hierbei werden die Daten auf mehrere kleine Datenströme aufgeteilt, wodurch der Verlust durch Störung eines Datenstroms die gesamte Übertragung nur gering stört}. \\
+Die meisten heutigen Neugeräten sind nach den Standards 802.11n und 802.11ac zertifiziert, die in den Jahren 2009 und 2013 veröffentlicht wurden. Ersteres bietet sowohl das 2,4Ghz als auch 5Ghz Band an, letzteres nur 5Ghz. Beide setzen ausschließlich auf OFDM. Bei diesen Standards wird zum ersten Mal \glqq Multiple-input and Muliple-output\grqq \footnote{kurz MIMO; häufig als \glqq Smart Antennas\grqq \ bezeichnet} Technologie umgesetzt. Bei der MIMO Technologie werden mehrere Antennen sowohl zum Senden als auch zum Empfangen genutzt, um so die Datenübertragung immens zu beschleunigen. 
 \clearpage
+
+
 \section{Sicherheit}
 Um WLAN-Netze zu schützen, existieren diverse Möglichkeiten der Verschlüsselung. 
 \subsection{RC4}

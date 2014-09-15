@@ -1,5 +1,0 @@
-#Mon Apr 14 15:34:37 CEST 2014
-__DEFAULT__=false
-org.eclipse.sdk.Eclipse.master=true
-org.eclipse.help.ui.localSearch.master=true
-expression=assert
